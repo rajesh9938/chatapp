@@ -15,5 +15,6 @@ class UserMsg(models.Model):
     sender = models.CharField(max_length=100)
     reciver = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
+    chatstatus = models.BooleanField(default=False)
 
 

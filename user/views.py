@@ -9,15 +9,31 @@ from user.models import User, UserMsg
 def home(request):
     try:
         username = request.session['user']
-        print(">>",username)
+        # print(">>",username)
         udata = User.objects.get(username=username)
         friends = User.objects.filter().exclude(username=username)
+        fdata = []
+        for i in friends:
+            msg = UserMsg.objects.filter(Q(sender__in=[i.username, username]) & Q(reciver__in=[username, i.username]))
+            if msg:
+                fdata.append({
+                    "username": i.username,
+                    "first_name": i.first_name,
+                    "last_name": i.last_name,
+                    "status": msg[0].chatstatus
+                })
+            else:
+                fdata.append({
+                    "username": i.username,
+                    "first_name": i.first_name,
+                    "last_name": i.last_name
+                })
     except Exception as e:
         print(">>>",e)
         return redirect('login')
     data = {
         "fullname": udata.first_name + " " + udata.last_name,
-        "friends": friends
+        "friends": fdata
     }
     return render(request, "home.html",data)
 
@@ -26,7 +42,7 @@ def home(request):
 def login(request):
     try:
         username = request.session['user']
-        print(">>",username)
+        # print(">>",username)
         data = User.objects.filter(username=username)
         return redirect('home')
     except Exception as e:
@@ -81,8 +97,12 @@ def chat(request, username):
                 })
                 print(pmsg)
                 UserMsg.objects.filter(Q(sender__in=[uname,select_user]) & Q(reciver__in=[uname,select_user])).update(
-                    message=pmsg
+                    message=pmsg,
+                    sender=uname,
+                    reciver=select_user,
+                    chatstatus=True
                 )
+                print("saved")
             else:
                 pmsg = []
                 pmsg.append({
@@ -92,7 +112,8 @@ def chat(request, username):
                 UserMsg(
                     sender=uname,
                     reciver=select_user,
-                    message=pmsg
+                    message=pmsg,
+                    chatstatus = True
                 ).save()
         except Exception as e:
             print(">>>", e)
@@ -106,8 +127,13 @@ def chat(request, username):
         friends = User.objects.filter().exclude(username=uname)
         msg = UserMsg.objects.filter(Q(sender__in = [uname,username]) & Q(reciver__in=[username,uname]))
         if msg.exists():
-            msg = msg[0]
-            message =  msg.message
+            if msg[0].sender != uname:
+                msg.update(
+                    chatstatus=False
+                )
+            msg1 = UserMsg.objects.filter(Q(sender__in=[uname, username]) & Q(reciver__in=[username, uname]))
+            msg1 = msg1[0]
+            message =  msg1.message
         else:
             message = []
     except Exception as e:

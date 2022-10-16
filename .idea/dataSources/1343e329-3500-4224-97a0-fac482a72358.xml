@@ -585,11 +585,16 @@ model</ColNames>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="131" parent="19">
+    <column id="131" parent="19" name="chatstatus">
+      <Position>6</Position>
+      <DataType>bool|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="132" parent="19">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <check id="132" parent="19">
+    <check id="133" parent="19">
       <Predicate>(JSON_VALID(&quot;message&quot;) OR &quot;message&quot; IS NULL)</Predicate>
     </check>
   </database-model>

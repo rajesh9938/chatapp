@@ -44,10 +44,12 @@ box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 {#                      <p class="small text-white">Hello, Are you there?</p>#}
                     </div>
                   </div>
+                    {% if i.status %}
                   <div class="pt-1">
 {#                    <p class="small text-white mb-1">Just now</p>#}
-{#                    <span class="badge bg-danger float-end">1</span>#}
+                    <span class="badge bg-danger float-end">New Message</span>
                   </div>
+                    {% endif %}
                 </a>
               </li>
                 {% endfor %}

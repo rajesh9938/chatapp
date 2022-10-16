@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd27c322-8677-4234-984e-6138998c85b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/migrations/0002_usermsg_chatstatus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1343e329-3500-4224-97a0-fac482a72358.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1343e329-3500-4224-97a0-fac482a72358.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatapp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +137,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
+          <entry key="txt" value="1" />
           <entry key="user_user" value="1" />
           <entry key="user_usermsg" value="1" />
         </counts>
@@ -150,7 +147,8 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="2" />
-          <entry key="Python" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -169,10 +167,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chatapp/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3942">
+            <state>
               <caret line="146" column="6" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#html#0;n#!!top" />
@@ -202,7 +212,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
@@ -210,15 +220,6 @@
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://1343e329-3500-4224-97a0-fac482a72358/schema/main/table/user_usermsg">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -290,12 +291,13 @@
         <option value="$PROJECT_DIR$/chatapp/urls.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/navbar.html" />
-        <option value="$PROJECT_DIR$/chatapp/settings.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/chat.html" />
         <option value="$PROJECT_DIR$/user/models.py" />
         <option value="$PROJECT_DIR$/templates/friends.html" />
         <option value="$PROJECT_DIR$/user/views.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/chatapp/settings.py" />
       </list>
     </option>
   </component>
@@ -428,12 +430,12 @@
     <frame x="-7" y="-7" width="1550" height="830" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32808024" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32808024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,16 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatapp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2025">
@@ -509,7 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3942">
+        <state>
           <caret line="146" column="6" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" />
@@ -576,12 +568,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="130" column="27" lean-forward="true" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatapp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

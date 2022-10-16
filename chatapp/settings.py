@@ -64,13 +64,31 @@ WSGI_APPLICATION = 'chatapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
+    'default': {
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'darpkgb61omsk',
+
+        'USER': 'fidjxxlowwlebr',
+
+        'PASSWORD': '327440197116f886d1346bf66c48243e7565b74100a0de54c831385c9eea24f3',
+
+        'HOST': 'ec2-44-210-228-110.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
+    }
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
